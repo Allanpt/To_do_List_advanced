@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Js/script.js" defer></script>
+    <!--Icones-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>To do List</title>
+</head>
+<body>
+    <main>
+        <h1>To do list</h1>
+        <form id="add-tarefas-show" class="add-tarefas ">
+            <p>Adicione sua tarefa</p>
+            <div id="add-inputs">
+                <input id="to-do" type="text" name="to-do" placeholder="O que vai fazer?">
+                <button><iconify-icon icon="line-md:plus"></iconify-icon></button>
+            </div>
+        </form>
+        <form id="add-tarefas-hide"class="add-tarefas hide">
+            <p>Edite sua tarefa</p>
+            <div id="add-inputs" class="add-inputs-hide">
+                <section>
+                    <input id="to-do-hide" type="text" name="to-do">
+                    <button id="edit-confirm"><iconify-icon icon="line-md:clipboard-arrow"></iconify-icon></button>
+                </section>
+                <button id="cancel">Cancelar</button>
+            </div>
+        </form>
+        <form id="search-filter">
+            <div id="search">
+                <p>Pesquisar:</p>
+                <div id="search-inputs">
+                    <input id="field-search" type="text" name="field-search" placeholder="Buscar...">
+                    <button><iconify-icon icon="ic:baseline-cancel-presentation"></iconify-icon></button>
+                </div>
+            </div>
+            <div id="filter">
+                <p>Filtrar:</p>
+                <select id="field-filter">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="toDo">A fazer</option>
+                </select>
+            </div>
+        </form>
+        <div id="to-do-list">
+            <!-- <div class="to-do ">
+                <p>Ir para academia</p>
+                <div class="to-do-buttons">
+                    <button class="confirm"><iconify-icon icon="line-md:confirm"></iconify-icon></button>
+                    <button class="edit"><iconify-icon icon="line-md:edit"></iconify-icon></button>
+                    <button class="close"><iconify-icon icon="line-md:close"></iconify-icon></button>
+                </div>
+            </div> -->
+        </div>
+    </main>
+</body>
+</html>

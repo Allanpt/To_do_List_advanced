@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: url(/assets/img-to-do-list.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+main{
+    background-color: #38382C;
+    border-radius: 1rem;
+    color: #F7B376;
+    width: 450px;
+    min-height: 200px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    
+}
+.hide{
+    display: none !important;
+}
+h1, .add-tarefas, #search-filter{
+    border-bottom: 1px solid;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+p{
+    margin: 5px 0;
+    font-weight: bold;
+}
+input{
+    padding: 4px 10px;
+    border: 2px solid #F7B376;
+}
+iconify-icon{
+    width: 13px;
+    height: 13px;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px;
+    cursor: pointer;
+    border: 2px solid #F7B376;
+    background: white;
+    transition: 0.25s;
+}
+button:hover{
+    color: #F7B376;
+    border: 2px solid white;
+    background-color: #38382C ;
+}
+#add-inputs{
+    gap: 5px;
+}
+.add-tarefas, #search-filter{
+    padding: 15px;
+}
+#add-inputs, #search-filter, #search-inputs{
+    display: flex;
+}
+#search-filter{
+    gap: 20px;
+}
+#search{
+    padding-right: 20px;
+    border-right: 1px double #F7B376 ;
+}
+#search-inputs{
+    gap: 5px;
+}
+#search-inputs button{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#field-search{
+    width: 170px;
+}
+#field-filter{
+    width: 100px;
+}
+#cancel{
+    display: block;
+    width: 80px;
+}
+#add-inputs section{
+    display: flex;
+    gap: 5px;
+}
+.add-inputs-hide{
+    flex-direction: column;
+    gap: 15px !important;
+}
+.to-do, .to-do-buttons{
+    display: flex;
+}
+.to-do{
+    padding: 15px;
+    justify-content: space-between;
+    border-bottom: 1px solid #F7B376;
+}
+.to-do p{
+    font-size: 14px;
+}
+.to-do-buttons{
+    gap: 5px;
+}
+.done{
+    background-color: #F7B376;
+    opacity: 85%;
+}
+.done p{
+    color: #38382C;
+    text-decoration: line-through;
+    font-style: italic;
+}
+.done button{
+    color: #F7B376;
+    border: 2px solid white;
+    background-color: #38382C ;
+}
+.done button:hover{
+    color: #38382C;
+    border: 2px solid #F7B376;
+    background-color: white ;
+}
+
+iconify-icon{
+    pointer-events: none;
+}
